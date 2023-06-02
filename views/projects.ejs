@@ -1,0 +1,58 @@
+<!--Using EJS template engine for header and main navbar-->
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+   
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-5">
+      <img src="/images/circles.gif" width="12px" height="12px" alt="">&nbsp;
+      <%=title%>
+      &nbsp;<img src="/images/circles.gif" width="12px" height="12px" alt="">
+    </h1>
+  </div>
+  <p>During my studies at Centennial College, I have completed some IT projects.
+    <br>Below are 3 highlighted ones for your reference:</p>
+  <p>
+    <table>
+        <tr>
+            <td>
+                <b>Project name:</b> Bee Smasher<br>
+                <b>Role/ Duties:</b> I was responsible for building the whole website including all the interactive parts mainly using the canvas and object-oriented concept in JavaScript.<br>
+                <b>Outcome:</b> This is an online game for people to click on the bees and get scores. 
+                The speed will become faster; players can decide to reset the game speed or score.
+            </td>
+            <td><img src="/images/onlineGame.png" width="230" height="160"></td>
+        </tr>
+        <tr>
+            <td>
+                <b>Project name:</b> SSchool App<br>
+                <b>Role/ Duties:</b> I was responsible for preparing the Software requirements specification (SRS) - 
+                mainly focusing on the design specification and also drawing diagrams such as use case diagrams and state diagrams.
+                <br>
+                <b>Outcome:</b> My team had prepared an analysis model based on 3 aspects - scenario-based, class-based, and behavioral modelling.
+                We have also included some details on UI and UX.
+            </td>
+            <td><img src="/images/sSchoolApp.png" width="230" height="160"></td>
+        </tr>
+        <tr>
+            <td>
+                <b>Project name:</b> Website for a real estate agent<br>
+                <b>Role/ Duties:</b> I was responsible for building the whole website including the gallery and contact form.<br>
+                <b>Outcome:</b> This is a website introduing a real estate agent and his listings. 
+                Users can browse the website for what properties are available and also contact the agent if needed.
+            </td>
+            <td><img src="/images/propertiesWebsite.png" width="230" height="160"></td>
+        </tr>
+    </table>
+  </p>
+  
+  <p>If you would like to learn more about what <b>services</b> I offer, just click 
+  <a href="services">here</a> or the below button to check them out.</p>
+  <p><a href="services"><button>SERVICES</button></a></p>
+
+  
+</main>   
+   
+<!--Using EJS template engine for bottom navbar and footer-->
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
