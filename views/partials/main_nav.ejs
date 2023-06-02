@@ -1,0 +1,60 @@
+<!--#Main Navbar-->
+<nav class="navbar navbar-expand-lg navbar-custom-top">
+    <div class="container-fluid">
+      
+      <!--<a class="navbar-brand" href="#">COMP229</a>-->
+      <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>-->
+
+      <a href="/"><img src="/images/shLogo.png" alt="logo" style: width="60px"; height="60px"></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <b>
+          <ul class="navbar-nav ml-auto">
+  
+            <% if (title==="Home") { %>
+                <li class="nav-item active">
+            <% } else { %>
+                <li class="nav-item">
+            <% } %>
+
+            <a class="nav-link active"  aria-content=page href="/"><i class="fa-solid fa-home-alt"></i> Home </a>
+            </li>
+  
+           <% if (title==="About") { %>
+          <li class="nav-item active">
+            <% } else { %>
+              <li class="nav-item">
+                <% } %>
+            <a class="nav-link"  href="/about"><i class="fa-solid fa-person"></i> About </a>
+          </li>
+  
+           <% if (title==="Projects") { %>
+            <li class="nav-item active">
+            <% } else { %>
+          <li class="nav-item">
+            <% } %>
+            <a class="nav-link"  href="/projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+          </li>
+  
+           <%if(title==="Services"){%>
+            <li class="nav-item active">
+            <% } else { %>
+          <li class="nav-item">
+            <% } %>
+            <a class="nav-link"  href="/services"><i class="fa-brands fa-servicestack"></i> Services</a>
+          </li>
+
+          <% if (title==="Contact") { %>
+            <li class="nav-item active">
+            <% } else { %>
+          <li class="nav-item">
+            <% } %>
+            <a class="nav-link"  href="/contact"><i class="fa-solid fa-address-card"></i> Contact</a>
+          </li>
+
+          </ul>
+          </b>
+      </div>
+    </div>
+  </nav>
