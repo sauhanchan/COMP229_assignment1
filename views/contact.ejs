@@ -1,0 +1,102 @@
+<!--Using EJS template engine for header and main navbar-->
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+   
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-5">
+      <img src="/images/circles.gif" width="12px" height="12px" alt="">&nbsp;
+      <%=title%>
+      &nbsp;<img src="/images/circles.gif" width="12px" height="12px" alt="">
+    </h1>
+  </div>
+  <img src="/images/contact.jpg" width="430" height="320" style="float:right">
+  <p>
+    <h3>My motto: Be open to new ideas
+      <img src="/images/bulb.png" width="40" height="50">
+    </h3>
+  </p>
+  <p>I am always here to help you with your needs. Just feel free to get in touch!</p>
+        <i class="fa fa-globe"></i>&nbsp;Website: <a href="https://www.linkedin.com/in/jane-chan-685083141/" target="_blank">
+            https://www.linkedin.com/in/jane-chan-685083141/</a>
+        <br>
+        <i class="fa fa-envelope"></i>&nbsp;&nbsp;Email: <a href="mailto:schan253@my.centennialcollege.ca" target="_blank">
+            schan253@my.centennialcollege.ca</a>
+        <br>
+        <i class="fa fa-phone"></i>&nbsp;&nbsp;Phone: <a href="tel:123-456-7890" target="_blank">
+            123-456-7890</a>
+        <br><br>
+        <i class="fa fa-question-circle"></i>&nbsp;All types of questions are welcome!&nbsp;&nbsp;
+        <br><br>
+  <p>Or you can just fill in the <a href="#contact_form">form</a> below (questions with * : required).
+    <br>I will get back to you as soon as possible. Thank you.:)</p>
+  <br>
+  <hr>
+<form method="get" action="/" name="contact_form" id="contact_form">
+<fieldset><legend>&nbsp;&nbsp;BASIC INFORMATION&nbsp;&nbsp;</legend>
+<p><label for="first_name">*First name: </label>
+    <input type="text" name="first_name" id="first_name" placeholder="e.g.Sau Han" onfocus="this.placeholder=''"
+    onblur="this.placeholder='e.g.Sau Han'" required="required" size="20px">
+  <br>
+  <br>
+  <label for="last_name">*Last name: </label> 
+    <input type="text" name="last_name" id="last_name" placeholder="e.g.Chan" onfocus="this.placeholder=''"
+    onblur="this.placeholder='e.g.Chan'" required="required" size="20px">
+  <br>
+  <br>
+  <label for="phone">Phone: </label> 
+    <input type="tel" name="phone" id="phone" placeholder="e.g.123-456-7890" onfocus="this.placeholder=''"
+    onblur="this.placeholder='e.g.123-456-7890'" size="20px">        
+  <br>
+  <br>
+  <label for="email">*Email: </label> 
+    <input type="email" name="email" id="email" placeholder="e.g.sauhanchan@gmail.com" onfocus="this.placeholder=''"
+    onblur="this.placeholder='e.g.sauhanchan@gmail.com'" required="required" size="30px">      
+    <br>
+  <br>
+  <label for="service_type">*Type of services: </label>
+<select name="service_type" id="service_type" required="required">
+  <option value="" selected disabled hidden>Choose here</option>
+  <option value="webDevelopment">Web development</option>
+  <option value="generalProgramming">General programming</option>
+  <option value="mobileAppUIUX">Mobile apps UI/UX</option>
+  <option value="graphicDesign">Graphic design</option>
+  <option value="others">Others</option>
+</select>
+  <br>
+  <br>
+  <label for="time">Preferred contact time:</label>
+    <input type="time" id="time" name="time"
+    min="09:00" max="21:00">
+  <br>
+  <br>
+  <label for="date">Preferred contact date:</label>
+    <input type="date" id="date" name="date">     
+  <br>
+  <br>
+  <label for="other">Other: </label><br>
+  <textarea id="other" name="other" placeholder="Please type your message here." onfocus="this.placeholder=''"
+  onblur="this.placeholder='Please type your message here.'"></textarea>      
+</p></fieldset>
+
+<p>**Remarks:</p>
+<ul>
+<li>If you need to amend your answers after submitting, just send me an <a href="schan253@my.centennialcollege.ca" target="_blank">email</a> on the edits. Thank you.</li>
+</ul>
+<br>
+<input type="submit" value="SUBMIT">
+<input type="reset" value="RESET">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</form>
+
+  
+</main>   
+   
+<!--Using EJS template engine for bottom navbar and footer-->
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>

@@ -1,0 +1,34 @@
+<!--Using EJS template engine for header and main navbar-->
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+   
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-5">
+      <img src="/images/circles.gif" width="12px" height="12px" alt="">&nbsp;
+      <%=title%>
+      &nbsp;<img src="/images/circles.gif" width="12px" height="12px" alt="">
+    </h1>
+  </div>
+  <img src="/images/shcProfilePic.jpg" width="300" height="388" style="float:right;">
+  <p>Hi everyone, this is Sau Han, Chan from Hong Kong. Nice to meet you all! </p>
+  <p>I am now studying a 2-year Software Engineering Technician Program at Centennial College.</p>
+  <p>I also have some background in risk management, marketing and design.</p>
+  <p>Listening to others' stories is one of my favourites as it helps me stay creative and innovative.</p>
+  <p>
+    <h3>My motto: Be open to new ideas
+      <img src="/images/bulb.png" width="40" height="50">
+    </h3>
+  </p>
+  <p>If you would like to know what <b>projects</b> I have completed, just click 
+  <a href="projects">here</a> to check them out.</p>
+  <p>Or, if you would like to have my resume, please click the below button to download. Thanks.:)</p>
+  <br>
+  <p><a href="/resume/SHC_resume.pdf" target="_blank"><button>RESUME</button></a></p>
+
+  
+</main>   
+   
+<!--Using EJS template engine for bottom navbar and footer-->
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
