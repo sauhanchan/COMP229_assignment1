@@ -1,0 +1,56 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+nav a {
+  color: rgb(154, 190, 215);
+}
+
+/*For buttons*/
+button {
+  transition-duration: 0.4s;
+  background-color: #0b6e98;
+  color: #ffffff;
+  font-weight: bold;
+  padding:5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border:none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right:auto;
+  margin-left: 100px;
+  margin-top: 4px;
+  cursor: pointer
+}
+
+button:hover {
+  background-color: #4de3ee;
+  color: #06203b;
+}   
+
+/*For Jumbotron's attributes*/
+.jumbotron{
+  height: 100px;
+  padding:0.1em 0.1em;
+}
+
+.container p,h3{
+  padding-left: 30px;
+}
+
+/*
+.bgColorJumbo{
+  background-color: #4de3ee;
+}*/
+
+/*#For table in projects & services*/
+table{
+  margin:30px;
+}
+
+td{
+  padding-right: 50px;
+  padding-top: 30px;
+}
