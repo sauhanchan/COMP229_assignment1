@@ -1,6 +1,12 @@
+*{box-sizing: border-box;}
+
 body {
   padding: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: justify;
+  color:#082544;
+  margin:0px;
 }
 
 nav a {
@@ -36,21 +42,130 @@ button:hover {
   padding:0.1em 0.1em;
 }
 
-.container p,h3{
-  padding-left: 30px;
-}
-
-/*
-.bgColorJumbo{
-  background-color: #4de3ee;
-}*/
-
 /*#For table in projects & services*/
 table{
-  margin:30px;
+  margin:0px;
 }
 
 td{
-  padding-right: 50px;
+  padding-right: 30px;
   padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+td.projects{
+  border-bottom: #136c84 double 3px;
+}
+
+table.services{
+  padding-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+/*To add margin top space for the navbar*/
+main{
+  margin-top: 90px;
+}
+
+/*For the main content on each main .ejs page*/
+.mainContent{
+  padding-left: 30px;
+  text-align: justify;
+  margin-bottom: 80px;
+}
+
+li.form {
+  list-style: none;
+  padding: 5px 5px 8px 20px;
+  background-image: url(/images/circles.gif);   /* url must have / in front of images*/
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 7px;
+  line-height: 10px;
+}
+
+a{
+  color:#2d75b4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+input[type="submit"]{
+  transition-duration: 0.4s;
+  background-color: #0b6e98;
+  color: #ffffff;
+  font-weight: bold;
+  padding:5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border:none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right:auto;
+  margin-top: 4px;
+  cursor: pointer
+}
+
+input[type="reset"]{
+  transition-duration: 0.4s;
+  background-color: #0b6e98;
+  color: #ffffff;
+  font-weight: bold;
+  padding:5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border:none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right:auto;
+  margin-left: 30px;
+  margin-top: 4px;
+  cursor: pointer
+}
+
+input[type="reset"]:hover,input[type="submit"]:hover {
+  background-color: #4de3ee;
+  color: #06203b;
+}
+
+label {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+p label{
+  margin-right:20px;
+}
+
+textarea
+{
+resize: none;
+overflow-y: scroll;
+height:80px;
+width:50%;
+margin-left:20px;
+padding-left:10px;
+}
+
+hr{
+  border-top:1.5px solid #bfd3ea;
+  margin-left:0px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.form_preference label{
+  float:left;
+  display: block;
+  text-align: right;
+  width:222px;
+  padding-right: 0px;
+  font-weight: bold;
+}
+
+legend{
+  font-weight: bold;
 }

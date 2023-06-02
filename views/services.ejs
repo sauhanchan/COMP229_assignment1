@@ -3,45 +3,46 @@
 <%- include partials/main_nav.ejs %>
    
 <main class="container">
-  <div class="jumbotron">
+  <div class="jumbotron bgColorJumbo">
     <h1 class="display-5">
       <img src="/images/circles.gif" width="12px" height="12px" alt="">&nbsp;
       <%=title%>
       &nbsp;<img src="/images/circles.gif" width="12px" height="12px" alt="">
     </h1>
   </div>
+  <div class="mainContent">
   <p>Love my projects and want to find out more? <br>
     <i class="fa-solid fa-heart"></i> Let's check out what services I provide below!
-  <p>
-    <table>
+    <br><br>
+    <table class="services">
         <tr>
             <td>
                 <b><i class="fa-solid fa-laptop-file"></i> Web development</b><br>
             </td>
-            <td><img src="/images/webDevelop.png" width="180" height="180"></td>
+            <td><img src="/images/webDevelop.png" width="220" height="220"></td>
             <td>
                 <b><i class="fa-solid fa-laptop-code"></i> General programming</b><br>
             </td>
-            <td><img src="/images/generalProg.png" width="180" height="180"></td>
+            <td><img src="/images/generalProg.png" width="220" height="220"></td>
         </tr>
         <tr>
             <td>
                 <b><i class="fa-solid fa-mobile-screen"></i> Mobile apps UI/UX</b><br>
             </td>
-            <td><img src="/images/mobileApp.png" width="180" height="180"></td>
+            <td><img src="/images/mobileApp.png" width="220" height="220"></td>
             <td>
                 <b><i class="fa-solid fa-paint-brush"></i> Graphic design</b><br>
             </td>
-            <td><img src="/images/graphicDesign.png" width="180" height="180"></td>
+            <td><img src="/images/graphicDesign.png" width="220" height="220"></td>
         </tr>
     </table>
-  </p>
+    <br>
   
   <p>Keen to learn more about these <b>services</b>? I am just one click away!
     <br>Just click <a href="contact">here</a> or on the below button to get in touch!</p>
   <p><a href="contact"><button>CONTACT ME</button></a></p>
 
-  
+  </div>
 </main>   
    
 <!--Using EJS template engine for bottom navbar and footer-->
