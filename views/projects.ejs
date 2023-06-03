@@ -1,8 +1,17 @@
-<!--Using EJS template engine for header and main navbar-->
+<!--
+  Filename: projects.ejs;
+  Author: Sau Han, Chan;
+  StudentID: 301276498;
+  Date: 2023-06-02;
+  Description: This is for the projects content with a button linked to the Services page.
+-->
+
+<!-- #Using EJS template engine for header and main navbar-->
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
    
 <main class="container">
+  <!-- #For the title banner -->
   <div class="jumbotron bgColorJumbo">
     <h1 class="display-5">
       <img src="/images/circles.gif" width="12px" height="12px" alt="">&nbsp;
@@ -10,51 +19,61 @@
       &nbsp;<img src="/images/circles.gif" width="12px" height="12px" alt="">
     </h1>
   </div>
+  <!-- #For the main content-->
   <div class="mainContent">
-  <p>During my studies at Centennial College, I have completed some IT projects.
-    <br>Below are 3 <b>highlights</b> for your reference:</p>
+    <p>During my studies at Centennial College, I have completed some IT projects.
+       <br>Below are 3 <b>highlights</b> for your reference:
+    </p>
+    <!-- #Table for showing projects details-->
     <table>
-        <tr>
-            <td class="projects">
-                <b>Project name:</b> Bee Smasher<br>
-                <b>Role/ Duties:</b> I was responsible for building the whole website including all the interactive parts mainly using the canvas and object-oriented concept in JavaScript.<br>
-                <b>Outcome:</b> This is an online game for people to click on the bees and get scores. 
-                The speed will become faster; players can decide to reset the game speed or score.
-            </td>
-            <td class="projects"><img src="/images/onlineGame.png" width="325" height="215"></td>
-        </tr>
-        <tr>
-            <td class="projects">
-                <b>Project name:</b> SSchool App<br>
-                <b>Role/ Duties:</b> I was responsible for preparing the Software requirements specification (SRS) - 
-                mainly focusing on the design specification and also drawing diagrams such as use case diagrams and state diagrams.
-                <br>
-                <b>Outcome:</b> My team had prepared an analysis model based on 3 aspects - scenario-based, class-based, and behavioral modelling.
-                We have also included some details on UI and UX.
-            </td>
-            <td class="projects"><img src="/images/sSchoolApp.png" width="325" height="215"></td>
-        </tr>
-        <tr>
-            <td class="projects">
-                <b>Project name:</b> Website for a real estate agent<br>
-                <b>Role/ Duties:</b> I was responsible for building the whole website including the gallery and contact form.<br>
-                <b>Outcome:</b> This is a website introduing a real estate agent and his listings. 
-                Users can browse the website for what properties are available and also contact the agent if needed.
-            </td>
-            <td class="projects"><img src="/images/propertiesWebsite.png" width="325" height="215"></td>
-        </tr>
+      <tr class="projects">
+          <td>
+              <b>Project name:</b> Bee Smasher<br>
+              <b>Role/ Duties:</b> I was responsible for building the whole website including all the interactive parts mainly using the canvas and object-oriented concept in JavaScript.<br>
+              <b>Outcome:</b> This is an online game for people to click on the bees and get scores. 
+              The speed will become faster; players can decide to reset the game speed or score.
+          </td>
+          <td>
+              <img src="/images/onlineGame.png" width="325" height="215">
+          </td>
+      </tr>
+      <tr class="projects">
+          <td>
+              <b>Project name:</b> SSchool App<br>
+              <b>Role/ Duties:</b> I was responsible for preparing the Software requirements specification (SRS) - 
+              mainly focusing on the design specification and also drawing diagrams such as use case diagrams and state diagrams.<br>
+              <b>Outcome:</b> My team had prepared an analysis model based on 3 aspects - scenario-based, class-based, and behavioral modelling.
+              We have also included some details on UI and UX.
+          </td>
+          <td>
+              <img src="/images/sSchoolApp.png" width="325" height="215">
+          </td>
+      </tr>
+      <tr class="projects">
+          <td>
+              <b>Project name:</b> Website for a real estate agent<br>
+              <b>Role/ Duties:</b> I was responsible for building the whole website including the gallery and contact form.<br>
+              <b>Outcome:</b> This is a website introduing a real estate agent and his listings. 
+              Users can browse the website for what properties are available and also contact the agent if needed.
+          </td>
+          <td>
+              <img src="/images/propertiesWebsite.png" width="325" height="215">
+          </td>
+      </tr>
     </table>
-  <br>
-  <br>
-  <p>If you would like to learn more about these <b>projects</b>, please don't hesitate to click <a href="contact">here</a> to get in touch.
-  <br>
-  Or, if you would like to explore more about what <b>services</b> I offer, just click 
-  <a href="services">here</a> or the below button to check them out.</p>
-  <a href="services"><button>SERVICES</button></a>
-
+    <br>
+    <br>
+    <p>
+      If you would like to learn more about these <b>projects</b>, please don't hesitate to click <a href="contact">here</a> to get in touch.
+      <br>
+      Or, if you would like to explore more about what <b>services</b> I offer, just click 
+      <a href="services">here</a> or the below button to check them out.
+      <br><br>
+      <a href="services"><button>SERVICES</button></a>
+    </p>
   </div>
 </main>   
    
-<!--Using EJS template engine for bottom navbar and footer-->
+<!-- #Using EJS template engine for bottom navbar and footer-->
 <%- include partials/bottom_nav.ejs %>
 <%- include partials/footer.ejs %>

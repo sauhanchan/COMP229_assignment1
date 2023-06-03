@@ -1,8 +1,17 @@
-<!--Using EJS template engine for header and main navbar-->
+<!--
+  Filename: services.ejs;
+  Author: Sau Han, Chan;
+  StudentID: 301276498;
+  Date: 2023-06-02;
+  Description: This is for the services content with a button linked to the Contact page.
+-->
+
+<!-- #Using EJS template engine for header and main navbar-->
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
-   
+
 <main class="container">
+  <!-- #For the title banner -->
   <div class="jumbotron bgColorJumbo">
     <h1 class="display-5">
       <img src="/images/circles.gif" width="12px" height="12px" alt="">&nbsp;
@@ -10,41 +19,51 @@
       &nbsp;<img src="/images/circles.gif" width="12px" height="12px" alt="">
     </h1>
   </div>
+  <!-- #For the main content-->
   <div class="mainContent">
-  <p>Love my projects and want to find out more? <br>
-    <i class="fa-solid fa-heart"></i> Let's check out what services I provide below!
-    <br><br>
+    <p>Love my projects and want to find out more?<br>
+      <i class="fa-solid fa-heart"></i> Let's check out what services I provide below!<br><br>
+    </p>
+    <!-- #Table to show the services details-->
     <table class="services">
         <tr>
             <td>
-                <b><i class="fa-solid fa-laptop-file"></i> Web development</b><br>
+                <b><i class="fa-solid fa-laptop-file"></i> Web development</b>
             </td>
-            <td><img src="/images/webDevelop.png" width="220" height="220"></td>
             <td>
-                <b><i class="fa-solid fa-laptop-code"></i> General programming</b><br>
+                <img src="/images/webDevelop.png" width="220" height="220">
             </td>
-            <td><img src="/images/generalProg.png" width="220" height="220"></td>
+            <td>
+                <b><i class="fa-solid fa-laptop-code"></i> General programming</b>
+            </td>
+            <td>
+                <img src="/images/generalProg.png" width="220" height="220">
+            </td>
         </tr>
         <tr>
             <td>
-                <b><i class="fa-solid fa-mobile-screen"></i> Mobile apps UI/UX</b><br>
+                <b><i class="fa-solid fa-mobile-screen"></i> Mobile apps UI/UX</b>
             </td>
-            <td><img src="/images/mobileApp.png" width="220" height="220"></td>
             <td>
-                <b><i class="fa-solid fa-paint-brush"></i> Graphic design</b><br>
+                <img src="/images/mobileApp.png" width="220" height="220">
             </td>
-            <td><img src="/images/graphicDesign.png" width="220" height="220"></td>
+            <td>
+                <b><i class="fa-solid fa-paint-brush"></i> Graphic design</b>
+            </td>
+            <td>
+                <img src="/images/graphicDesign.png" width="220" height="220">
+            </td>
         </tr>
     </table>
     <br>
-  
-  <p>Keen to learn more about these <b>services</b>? I am just one click away!
-    <br>Just click <a href="contact">here</a> or on the below button to get in touch!</p>
-  <p><a href="contact"><button>CONTACT ME</button></a></p>
-
+    <p>Keen to learn more about these <b>services</b>? I am just one click away!
+      <br>Just click <a href="contact">here</a> or on the below button to get in touch!
+      <br><br>
+      <a href="contact"><button>CONTACT ME</button></a>
+    </p>
   </div>
 </main>   
    
-<!--Using EJS template engine for bottom navbar and footer-->
+<!-- #Using EJS template engine for bottom navbar and footer-->
 <%- include partials/bottom_nav.ejs %>
 <%- include partials/footer.ejs %>

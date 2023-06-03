@@ -1,8 +1,17 @@
-<!--Using EJS template engine for header and main navbar-->
+<!--
+  Filename: index.ejs;
+  Author: Sau Han, Chan;
+  StudentID: 301276498;
+  Date: 2023-06-02;
+  Description: This is for the homepage content with a button linked to the About page.
+-->
+
+<!-- #Using EJS template engine for header and main navbar-->
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
    
 <main class="container">
+  <!-- #For the title banner -->
   <div class="jumbotron bgColorJumbo">
     <h1 class="display-5">
       <img src="/images/circles.gif" width="12px" height="12px" alt="">&nbsp;
@@ -10,6 +19,7 @@
       &nbsp;<img src="/images/circles.gif" width="12px" height="12px" alt="">
     </h1>
   </div>
+  <!-- #For the main content-->
   <div class = "mainContent">
     <img src="/images/languages.png" width="400" height="310" style="float:right;margin-left:30px">
     <p>Hi everyone, this is Sau Han, Chan from Hong Kong.</p>
@@ -17,15 +27,19 @@
       with my transferrable problem solving skills in marketing, creativity in design, and analytical skills in Risk Management.</p>
     <p>
       <h3>My motto: Be open to new ideas
-        <img src="/images/bulb.png" width="40" height="50">
+        <img src="/images/bulb.png" width="50" height="50">
       </h3>
     </p>
-    <p>If you would like to know me more, just click 
-    <a href="about">here</a> or the below button to check out my <b>About</b> page.</p>
-    <p><a href="about"><button>ABOUT ME</button></a></p>
+    <p>
+      If you would like to know me more, just click 
+      <a href="about">here</a> or the below button to check out my <b>About</b> page.
+      <br>
+      <br>
+      <a href="about"><button>ABOUT ME</button></a>
+    </p>
   </div>
 </main>   
    
-<!--Using EJS template engine for bottom navbar and footer-->
+<!-- #Using EJS template engine for bottom navbar and footer-->
 <%- include partials/bottom_nav.ejs %>
 <%- include partials/footer.ejs %>

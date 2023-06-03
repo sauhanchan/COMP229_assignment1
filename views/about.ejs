@@ -1,8 +1,17 @@
-<!--Using EJS template engine for header and main navbar-->
+<!--
+  Filename: about.ejs;
+  Author: Sau Han, Chan;
+  StudentID: 301276498;
+  Date: 2023-06-02;
+  Description: This is for the About content with partial .ejs linked.
+-->
+
+<!-- #Using EJS template engine for header and main navbar-->
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
    
 <main class="container">
+  <!-- #For the title banner -->
   <div class="jumbotron bgColorJumbo">
     <h1 class="display-5">
       <img src="/images/circles.gif" width="12px" height="12px" alt="">&nbsp;
@@ -10,6 +19,8 @@
       &nbsp;<img src="/images/circles.gif" width="12px" height="12px" alt="">
     </h1>
   </div>
+
+  <!-- #For the main content-->
   <div class="mainContent">
     <img src="/images/shcProfilePic.jpg" width="300" height="388" style="float:right;">
     <br>
@@ -18,8 +29,8 @@
     <p>I also have some background in <b>risk management, marketing and design</b>.</p>
     <p>Listening to others' stories is one of my favourites as it helps me stay creative and innovative.</p>
     <p>
-      <h3>My motto: Be open to new ideas
-        <img src="/images/bulb.png" width="40" height="50">
+      <h3>My motto: Be open to new ideas&nbsp;
+        <img src="/images/bulb.png" width="50" height="50">
       </h3>
     </p>
     <p>If you would like to know what <b>projects</b> I have completed, just click 
@@ -28,9 +39,8 @@
     <br>
     <a href="/resume/SHC_resume.pdf" target="_blank"><button>RESUME</button></a>
   </div>
-  
 </main>   
    
-<!--Using EJS template engine for bottom navbar and footer-->
+<!-- #Using EJS template engine for bottom navbar and footer-->
 <%- include partials/bottom_nav.ejs %>
 <%- include partials/footer.ejs %>

@@ -1,5 +1,14 @@
+/*
+  Filename: style.css;
+  Author: Sau Han, Chan;
+  StudentID: 301276498;
+  Date: 2023-06-02;
+  Description: This is for the pages css in general.
+*/
+
 *{box-sizing: border-box;}
 
+/*#For overall pages*/
 body {
   padding: 0px;
   font: 14px;
@@ -9,11 +18,21 @@ body {
   margin:0px;
 }
 
-nav a {
-  color: rgb(154, 190, 215);
+a{
+  color:#2d75b4;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/*For buttons*/
+hr{
+  border-top:1.5px solid #bfd3ea;
+  margin-left:0px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+/*#For general buttons*/
 button {
   transition-duration: 0.4s;
   background-color: #0b6e98;
@@ -36,62 +55,7 @@ button:hover {
   color: #06203b;
 }   
 
-/*For Jumbotron's attributes*/
-.jumbotron{
-  height: 100px;
-  padding:0.1em 0.1em;
-}
-
-/*#For table in projects & services*/
-table{
-  margin:0px;
-}
-
-td{
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-td.projects{
-  border-bottom: #136c84 double 3px;
-}
-
-table.services{
-  padding-left: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-}
-
-/*To add margin top space for the navbar*/
-main{
-  margin-top: 110px;
-}
-
-/*For the main content on each main .ejs page*/
-.mainContent{
-  padding-left: 30px;
-  text-align: justify;
-  margin-bottom: 80px;
-}
-
-li.form {
-  list-style: none;
-  padding: 5px 5px 8px 20px;
-  background-image: url(/images/circles.gif);   /* url must have / in front of images*/
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 7px;
-  line-height: 10px;
-}
-
-a{
-  color:#2d75b4;
-  text-decoration: none;
-  font-weight: bold;
-}
-
+/*#For input buttons*/
 input[type="submit"]{
   transition-duration: 0.4s;
   background-color: #0b6e98;
@@ -130,17 +94,57 @@ input[type="reset"]:hover,input[type="submit"]:hover {
   color: #06203b;
 }
 
-label {
-  margin-right: 20px;
-  font-weight: bold;
+/*#For the main content on each main .ejs page*/
+.mainContent{
+  padding-left: 30px;
+  text-align: justify;
+  margin-bottom: 80px;
 }
 
-p label{
-  margin-right:20px;
+/*##For Jumbotron's attributes*/
+.jumbotron{
+  height: 100px;
 }
 
-textarea
-{
+/*##To add margin top space for the navbar*/
+main{
+  margin-top: 110px;
+}
+
+/*#For table in projects & services*/
+table{
+  margin:0px;
+}
+
+td{
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+tr.projects{
+  border-bottom: #136c84 double 3px;
+}
+
+table.services{
+  padding-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+/*#For the contact form - general*/
+li.form {
+  list-style: none;
+  padding: 5px 5px 8px 20px;
+  background-image: url(/images/circles.gif);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 7px;
+  line-height: 10px;
+}
+
+textarea{
 resize: none;
 overflow-y: scroll;
 height:80px;
@@ -149,14 +153,7 @@ margin-left:20px;
 padding-left:10px;
 }
 
-hr{
-  border-top:1.5px solid #bfd3ea;
-  margin-left:0px;
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-}
-
+/*#For the labels in the contact form - esp for floating left*/
 .form_preference label{
   float:left;
   display: block;
@@ -166,6 +163,27 @@ hr{
   font-weight: bold;
 }
 
-legend{
+label {
+  margin-right: 20px;
   font-weight: bold;
 }
+
+p label{
+  margin-right:20px;
+}
+
+/*#For the contact form in contact page - CONTACT banner*/
+fieldset legend{
+  font-weight: bold;
+  height:100px;
+  margin-left:-15px;
+  background-color: rgb(26, 201, 201);
+  text-align: center;
+  vertical-align:middle;
+  display:table-cell;
+  line-height: 100px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/*=========================*/
