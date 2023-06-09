@@ -6,6 +6,20 @@
   Description: This is for the error page.
 -->
 
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<!-- #Using EJS template engine for header and main navbar-->
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+<div style="margin-top:150px;padding-left: 30px;">
+  <h1><%= message %></h1>
+  <h2><%= error.status %></h2>
+  <br>
+  <a href="\"><button>GO BACK TO HOMEPAGE</button></a>
+</div>
+<!--
+  <pre><%= error.stack %></pre>
+-->
+
+<!-- #Using EJS template engine for bottom navbar and footer-->
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
