@@ -13,7 +13,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-//#To import the index.js & user.js file from the routes directory
+//#To import the index.js file from the routes directory
 var indexRouter = require('./routes/index');
 
 //#To create an instance of express application (for configuring the application and setting up routes)
